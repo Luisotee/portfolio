@@ -9,7 +9,7 @@ import {
 } from "@mantine/core";
 import { useEffect, useState } from "react";
 
-export function AboutMe() {
+export function HomePage() {
   const [reposcount, setReposCount] = useState(0);
   const [yearsExp, setYearsExp] = useState(0);
   async function getReposCount() {
@@ -54,7 +54,7 @@ export function AboutMe() {
           <Title order={1}>{yearsExp}</Title>
           <Stack spacing={0}>
             <Text>Years since</Text>
-            <Text>I started</Text>
+            <Text>I started developing</Text>
           </Stack>
         </Group>
         <Group>
@@ -65,7 +65,14 @@ export function AboutMe() {
           </Stack>
         </Group>
       </SimpleGrid>
-      <Button radius="xl" size="lg" variant="outline" mt="lg">
+      <Button
+        radius="xl"
+        size="lg"
+        variant="outline"
+        mt="xl"
+        component="a"
+        href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
+      >
         RESUME
       </Button>
     </Stack>

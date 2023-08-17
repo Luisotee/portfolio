@@ -67,6 +67,7 @@ export function HeaderMain() {
             </ActionIcon>
           </Group>
           <Group spacing="xl">
+            <Text>HOME</Text>
             <Text>ABOUT ME</Text>
             <Text>PROJECTS</Text>
             <Text>CONTACT ME</Text>
