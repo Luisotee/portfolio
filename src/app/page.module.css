@@ -1,0 +1,6 @@
+/* Add this CSS code to your existing styles */
+.fade_in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  

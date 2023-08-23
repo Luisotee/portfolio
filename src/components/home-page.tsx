@@ -33,48 +33,50 @@ export function HomePage() {
   }, []);
 
   return (
-    <Stack align="center">
-      <Image
-        src="50471205.jpg"
-        alt="Profile picture"
-        width={250}
-        height={250}
-        radius={296}
-      />
-      <Title order={2}>Hello, I&apos;m Luís!</Title>
-      <Title order={1}>
-        I build websites, apps, platforms and whatever I find cool.
-      </Title>
-      <Text>
-        A software developer aiming to become a good full stack dev, though
-        there is a long way ahead.
-      </Text>
-      <SimpleGrid cols={2} spacing={150}>
-        <Group>
-          <Title order={1}>{yearsExp}</Title>
-          <Stack spacing={0}>
-            <Text>Years since</Text>
-            <Text>I started developing</Text>
-          </Stack>
-        </Group>
-        <Group>
-          <Title order={1}>{reposcount}</Title>
-          <Stack spacing={0}>
-            <Text>Public projects</Text>
-            <Text>I developed</Text>
-          </Stack>
-        </Group>
-      </SimpleGrid>
-      <Button
-        radius="xl"
-        size="lg"
-        variant="outline"
-        mt="xl"
-        component="a"
-        href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
-      >
-        RESUME
-      </Button>
-    </Stack>
+    <>
+      <Stack align="center">
+        <Image
+          src="50471205.jpg"
+          alt="Profile picture"
+          width={250}
+          height={250}
+          radius={296}
+        />
+        <Title order={2}>Hello, I&apos;m Luís!</Title>
+        <Title order={1}>
+          I build websites, apps, platforms and whatever I find cool.
+        </Title>
+        <Text>
+          A software developer aiming to become a good full stack dev, though
+          there is a long way ahead.
+        </Text>
+        <SimpleGrid cols={2} spacing={150}>
+          <Group>
+            <Title order={1}>{yearsExp}</Title>
+            <Stack spacing={0}>
+              <Text>Years since</Text>
+              <Text>I started developing</Text>
+            </Stack>
+          </Group>
+          <Group>
+            <Title order={1}>{reposcount}</Title>
+            <Stack spacing={0}>
+              <Text>Public projects</Text>
+              <Text>I developed</Text>
+            </Stack>
+          </Group>
+        </SimpleGrid>
+        <Button
+          radius="xl"
+          size="lg"
+          variant="outline"
+          mt="xl"
+          component="a"
+          href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
+        >
+          RESUME
+        </Button>
+      </Stack>
+    </>
   );
 }

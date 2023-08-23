@@ -1,14 +1,22 @@
 "use client";
 
+import { AboutMe } from "@/components/about-me";
 import { HeaderMain } from "@/components/header-main";
 import { HomePage } from "@/components/home-page";
-import { Image, Container, Stack } from "@mantine/core";
+import { Projects } from "@/components/projects/projects";
+import { Container, Space } from "@mantine/core";
 
 export default function Home() {
   return (
     <>
       <HeaderMain />
-      <HomePage />
+      <Container>
+        <HomePage />
+        <Space h={300} />
+        <AboutMe />
+        <Space h={150} />
+        <Projects />
+      </Container>
     </>
   );
 }

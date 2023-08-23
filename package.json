@@ -23,5 +23,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/prop-types": "^15.7.5"
   }
 }
