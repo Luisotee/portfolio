@@ -47,6 +47,8 @@ export function HeaderMain() {
             <ActionIcon
               size="lg"
               component="a"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/Luisotee"
             >
               <IconBrandGithub size="1.7rem" stroke={1.5} />
@@ -54,6 +56,8 @@ export function HeaderMain() {
             <ActionIcon
               size="lg"
               component="a"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/luisotee/?locale=en_US"
             >
               <IconBrandLinkedin size="1.7rem" stroke={1.5} />
@@ -61,6 +65,8 @@ export function HeaderMain() {
             <ActionIcon
               size="lg"
               component="a"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/luisotee_/"
             >
               <IconBrandInstagram size="1.7rem" stroke={1.5} />
@@ -70,7 +76,6 @@ export function HeaderMain() {
             <Text>HOME</Text>
             <Text>ABOUT ME</Text>
             <Text>PROJECTS</Text>
-            <Text>CONTACT ME</Text>
           </Group>
           <Group position="right">
             <SwitchToggle />

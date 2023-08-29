@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <HeaderMain />
       <Container>
+        <Space h={100} />
         <HomePage />
         <Space h={300} />
         <AboutMe />
