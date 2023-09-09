@@ -61,6 +61,7 @@ export function ProjectsCard() {
       target="_blank"
       rel="noopener noreferrer"
       className={classes.card}
+      data-aos="flip-left"
     >
       <AspectRatio ratio={1920 / 1080}>
         <Image src={project.image} />

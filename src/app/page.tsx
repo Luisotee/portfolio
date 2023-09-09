@@ -11,12 +11,18 @@ export default function Home() {
     <>
       <HeaderMain />
       <Container>
-        <Space h={100} />
-        <HomePage />
+        <Space h={200} />
+        <div id="home">
+          <HomePage />
+        </div>
         <Space h={300} />
-        <AboutMe />
-        <Space h={150} />
-        <Projects />
+        <div id="about-me">
+          <AboutMe />
+        </div>
+        <Space h={300} />
+        <div id="projects">
+          <Projects />
+        </div>
       </Container>
     </>
   );

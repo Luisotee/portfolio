@@ -7,7 +7,9 @@ import {
 } from "@mantine/core";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,13 @@ export default function RootLayout({
   const [colorScheme, setColorScheme] = useState<ColorScheme>("dark");
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 120,
+    });
+  }, []);
 
   return (
     <ColorSchemeProvider
