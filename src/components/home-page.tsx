@@ -35,30 +35,32 @@ export function HomePage() {
   return (
     <>
       <Stack align="center">
-        <Image
-          src="50471205.jpg"
-          alt="Profile picture"
-          width={250}
-          height={250}
-          radius={296}
-        />
-        <Title order={2}>Hello, I&apos;m Luís!</Title>
-        <Title order={1}>
-          I build websites, apps, platforms and whatever I find cool.
-        </Title>
-        <Text>
-          A software developer aiming to become a good full stack dev, though
-          there is a long way ahead.
-        </Text>
-        <SimpleGrid cols={2} spacing={150}>
-          <Group>
+        <Stack align="center" data-aos="zoom-in" data-aos-duration="3000">
+          <Image
+            src="50471205.jpg"
+            alt="Profile picture"
+            width={250}
+            height={250}
+            radius={296}
+          />
+          <Title order={2}>Hello, I&apos;m Luís!</Title>
+          <Title order={1}>
+            I build websites, apps, platforms and whatever I find cool.
+          </Title>
+          <Text>
+            A software developer aiming to become a good full stack dev, though
+            there is a long way ahead.
+          </Text>
+        </Stack>
+        <SimpleGrid cols={2} spacing={150} mt="xl">
+          <Group data-aos="fade-right" data-aos-duration="3000">
             <Title order={1}>{yearsExp}</Title>
             <Stack spacing={0}>
               <Text>Years since</Text>
               <Text>I started developing</Text>
             </Stack>
           </Group>
-          <Group>
+          <Group data-aos="fade-left" data-aos-duration="3000">
             <Title order={1}>{reposcount}</Title>
             <Stack spacing={0}>
               <Text>Public projects</Text>
@@ -72,6 +74,8 @@ export function HomePage() {
           variant="outline"
           mt="xl"
           component="a"
+          data-aos="fade-up"
+          data-aos-duration="3000"
           href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
         >
           RESUME
