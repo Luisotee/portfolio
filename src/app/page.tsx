@@ -15,11 +15,11 @@ export default function Home() {
         <div id="home">
           <HomePage />
         </div>
-        <Space h={300} />
+        <Space h={200} />
         <div id="about-me">
           <AboutMe />
         </div>
-        <Space h={300} />
+        <Space h={200} />
         <div id="projects">
           <Projects />
         </div>

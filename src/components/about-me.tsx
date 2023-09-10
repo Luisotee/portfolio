@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Center, Stack, Text, Title } from "@mantine/core";
 
 export function AboutMe() {
@@ -6,24 +7,21 @@ export function AboutMe() {
       <Stack align="center">
         <Title order={1}> About Me </Title>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius
-          tortor vitae odio interdum, non aliquet nulla auctor. In hac habitasse
-          platea dictumst. Sed a lacinia ante. Ut eget elit in metus dictum
-          dignissim. Nulla facilisi. Pellentesque gravida mauris et ante tempus,
-          a vehicula ipsum elementum. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia Curae; Nullam eu lacinia nisl.
-          Nulla facilisi. In vel odio vel tortor volutpat commodo a non tortor.
-          Integer bibendum tincidunt tortor, eget convallis ligula accumsan a.
+          Hello, I'm Luis Otavio, a 21-year-old Brazilian hailing from the
+          charming city of Sorocaba. I'm a dedicated computer engineering
+          student and a passionate software developer on a perpetual quest for
+          knowledge and innovation. My journey in the world of technology has
+          taken me through the realms of JavaScript, TypeScript, React, React
+          Native, and Node.js, shaping me into a versatile developer with a
+          penchant for creating meaningful projects, all of which I proudly
+          showcase on my GitHub profile.
         </Text>
         <Text>
-          Praesent in sapien non est posuere euismod. Duis auctor gravida
-          turpis, non tincidunt velit volutpat non. Sed eget facilisis nulla.
-          Integer vel dolor a mi aliquam convallis a non ex. Suspendisse
-          potenti. Vivamus vehicula justo in metus malesuada, a convallis metus
-          tristique. Donec fermentum, felis nec volutpat hendrerit, dolor elit
-          interdum felis, eu suscipit felis libero at nisl. Fusce dignissim,
-          urna et hendrerit facilisis, libero nunc suscipit augue, eu lacinia
-          nisi lectus ac tellus.
+          I'm fueled by my passion for technology and a relentless drive to
+          learn and create. Feel free to connect with me on LinkedIn or explore
+          my GitHub repositories to dive deeper into my projects and expertise.
+          I'm excited about what the future holds and look forward to
+          collaborating with fellow enthusiasts in the world of technology.
         </Text>
       </Stack>
     </div>
