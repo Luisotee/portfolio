@@ -12,22 +12,21 @@ export default function Home() {
   const spaceHeight = isMobile ? 100 : 200;
 
   return (
-    <>
+    <Container w="100%">
       <HeaderMain />
-      <Container>
-        <Space h={spaceHeight} />
-        <div id="home">
-          <HomePage />
-        </div>
-        <Space h={spaceHeight} />
-        <div id="about-me">
-          <AboutMe />
-        </div>
-        <Space h={spaceHeight} />
-        <div id="projects">
-          <Projects />
-        </div>
-      </Container>
-    </>
+
+      <Space h={spaceHeight} />
+      <div id="home">
+        <HomePage />
+      </div>
+      <Space h={spaceHeight} />
+      <div id="about-me">
+        <AboutMe />
+      </div>
+      <Space h={spaceHeight} />
+      <div id="projects">
+        <Projects />
+      </div>
+    </Container>
   );
 }

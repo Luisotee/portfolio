@@ -165,7 +165,7 @@ export function HeaderMain() {
               PROJECTS
             </Button>
           </Group>
-          <Group position="right">
+          <Group position="right" className={classes.hiddenMobile}>
             <SwitchToggle />
           </Group>
           <Burger

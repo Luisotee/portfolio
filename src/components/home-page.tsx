@@ -35,7 +35,7 @@ export function HomePage() {
   return (
     <>
       <Stack align="center">
-        <Stack align="center" data-aos="zoom-in" data-aos-duration="3000">
+        <Stack align="center" data-aos="zoom-in" data-aos-duration="1500">
           <Image
             src="50471205.jpg"
             alt="Profile picture"

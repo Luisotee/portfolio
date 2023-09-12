@@ -1,4 +1,5 @@
 import { Divider, Drawer, ScrollArea, rem } from "@mantine/core";
+import { SwitchToggle } from "./dark-theme-switch";
 
 interface HeaderDrawerProps {
   drawerOpened: boolean;
@@ -34,7 +35,9 @@ export function HeaderDrawer({
           my="sm"
           color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
         />
-
+        <div className={classes.link}>
+          <SwitchToggle />
+        </div>
         <a onClick={handleHomePageClick} className={classes.link}>
           Home
         </a>
@@ -45,10 +48,7 @@ export function HeaderDrawer({
           Projects
         </a>
 
-        <Divider
-          my="sm"
-          color={theme.colorScheme === "dark" ? "dark.5" : "gray.1"}
-        />
+        <Divider />
       </ScrollArea>
     </Drawer>
   );
