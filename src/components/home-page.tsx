@@ -7,11 +7,14 @@ import {
   Title,
   Group,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 
 export function HomePage() {
   const [reposcount, setReposCount] = useState(0);
   const [yearsExp, setYearsExp] = useState(0);
+  const isMobile = useMediaQuery("(max-width: 600px)");
+
   async function getReposCount() {
     const response = await fetch(`https://api.github.com/users/Luisotee`);
     if (response.ok) {
@@ -35,7 +38,12 @@ export function HomePage() {
   return (
     <>
       <Stack align="center">
-        <Stack align="center" data-aos="zoom-in" data-aos-duration="1500">
+        <Stack
+          align="center"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           <Image
             src="50471205.jpg"
             alt="Profile picture"
@@ -53,14 +61,22 @@ export function HomePage() {
           </Text>
         </Stack>
         <SimpleGrid cols={2} spacing={150} mt="xl">
-          <Group data-aos="fade-right" data-aos-duration="3000">
+          <Group
+            data-aos={!isMobile ? "fade-right" : undefined}
+            data-aos-duration={!isMobile ? 1500 : undefined}
+            data-aos-once={!isMobile ? true : undefined}
+          >
             <Title order={1}>{yearsExp}</Title>
             <Stack spacing={0}>
               <Text>Years since</Text>
               <Text>I started developing</Text>
             </Stack>
           </Group>
-          <Group data-aos="fade-left" data-aos-duration="3000">
+          <Group
+            data-aos={!isMobile ? "fade-left" : undefined}
+            data-aos-duration={!isMobile ? 1500 : undefined}
+            data-aos-once={!isMobile ? true : undefined}
+          >
             <Title order={1}>{reposcount}</Title>
             <Stack spacing={0}>
               <Text>Public projects</Text>
@@ -74,8 +90,9 @@ export function HomePage() {
           variant="outline"
           mt="xl"
           component="a"
-          data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos={!isMobile ? "fade-up" : undefined}
+          data-aos-duration={!isMobile ? 1500 : undefined}
+          data-aos-once={!isMobile ? true : undefined}
           href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
         >
           RESUME
