@@ -63,8 +63,8 @@ export function HomePage() {
         <SimpleGrid cols={2} spacing={150} mt="xl">
           <Group
             data-aos={!isMobile ? "fade-right" : undefined}
-            data-aos-duration={!isMobile ? 1500 : undefined}
-            data-aos-once={!isMobile ? true : undefined}
+            data-aos-duration="1500"
+            data-aos-once={true}
           >
             <Title order={1}>{yearsExp}</Title>
             <Stack spacing={0}>
@@ -74,8 +74,8 @@ export function HomePage() {
           </Group>
           <Group
             data-aos={!isMobile ? "fade-left" : undefined}
-            data-aos-duration={!isMobile ? 1500 : undefined}
-            data-aos-once={!isMobile ? true : undefined}
+            data-aos-duration="1500"
+            data-aos-once={true}
           >
             <Title order={1}>{reposcount}</Title>
             <Stack spacing={0}>
@@ -90,9 +90,9 @@ export function HomePage() {
           variant="outline"
           mt="xl"
           component="a"
-          data-aos={!isMobile ? "fade-up" : undefined}
-          data-aos-duration={!isMobile ? 1500 : undefined}
-          data-aos-once={!isMobile ? true : undefined}
+          //data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-once="true"
           href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
         >
           RESUME
