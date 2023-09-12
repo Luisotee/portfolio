@@ -16,6 +16,7 @@ import {
   IconBrandLinkedin,
 } from "@tabler/icons-react";
 import { SwitchToggle } from "./dark-theme-switch";
+import { HeaderDrawer } from "./header-drawer";
 
 const useStyles = createStyles((theme) => ({
   fixedTopBar: {
@@ -35,7 +36,13 @@ const useStyles = createStyles((theme) => ({
     alignItems: "center",
   },
 
-  burger: {
+  hiddenMobile: {
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
+    },
+  },
+
+  hiddenDesktop: {
     [theme.fn.largerThan("sm")]: {
       display: "none",
     },
@@ -44,11 +51,31 @@ const useStyles = createStyles((theme) => ({
   social: {
     width: rem(260),
   },
+
+  link: {
+    display: "flex",
+    alignItems: "center",
+    height: "100%",
+    paddingLeft: theme.spacing.md,
+    paddingRight: theme.spacing.md,
+    textDecoration: "none",
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
+    fontWeight: 500,
+    fontSize: theme.fontSizes.sm,
+
+    [theme.fn.smallerThan("sm")]: {
+      height: rem(42),
+      display: "flex",
+      alignItems: "center",
+      width: "100%",
+    },
+  },
 }));
 
 export function HeaderMain() {
-  const [opened, { toggle }] = useDisclosure(false);
-  const { classes } = useStyles();
+  const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
+    useDisclosure(false);
+  const { classes, theme } = useStyles();
 
   function handleHomePageClick(event: any) {
     event.preventDefault();
@@ -127,7 +154,7 @@ export function HeaderMain() {
               <IconBrandInstagram size="1.7rem" stroke={1.5} />
             </ActionIcon>
           </Group>
-          <Group spacing="xs">
+          <Group spacing="xs" className={classes.hiddenMobile}>
             <Button variant="subtle" onClick={handleHomePageClick}>
               HOME
             </Button>
@@ -142,10 +169,20 @@ export function HeaderMain() {
             <SwitchToggle />
           </Group>
           <Burger
-            opened={opened}
-            onClick={toggle}
-            className={classes.burger}
+            opened={drawerOpened}
+            onClick={toggleDrawer}
+            className={classes.hiddenDesktop}
             size="sm"
+          />
+
+          <HeaderDrawer
+            drawerOpened={drawerOpened}
+            closeDrawer={closeDrawer}
+            classes={classes}
+            theme={theme}
+            handleProjectsClick={handleProjectsClick}
+            handleAboutMeClick={handleAboutMeClick}
+            handleHomePageClick={handleHomePageClick}
           />
         </div>
       </Container>
