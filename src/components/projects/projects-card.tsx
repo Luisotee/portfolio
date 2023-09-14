@@ -8,21 +8,21 @@ import {
   Container,
   AspectRatio,
 } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { useState } from "react";
 
 const projects = [
   {
     title: "Sydney WhatsApp Assistant",
-    image: "Bing_Chat_2023.svg",
+    image: "Bing_Chat_2023.png",
     desc: "A WhatsApp chatbot that leverages Bing AI's conversational capabilities.",
     href: "https://github.com/veigamann/sydney-whatsapp-chatbot",
   },
   {
     title: "Android Tax Calculator",
-    image:
-      "https://github.com/Luisotee/CalculadoraIRPFAndroid/blob/main/assets/adaptive-icon.png?raw=true",
+    image: "adaptive-icon.png",
     desc: "Brazilian tax calculation APP",
-    href: "https://github.com/Luisotee/CalculadoraIRPFAndroid",
+    href: "nextjs-icon.png",
   },
   {
     title: "Help Facul",
@@ -52,6 +52,7 @@ const useStyles = createStyles((theme) => ({
 export function ProjectsCard() {
   const { classes } = useStyles();
   const [isHovered, setIsHovered] = useState(false);
+  const isMobile = useMediaQuery("(max-width: 600px)");
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -75,9 +76,12 @@ export function ProjectsCard() {
         onMouseLeave={handleMouseLeave}
         h="100%"
       >
-        <AspectRatio ratio={1920 / 1080}>
-          <Image src={project.image} />
-        </AspectRatio>
+        <Card.Section>
+          <AspectRatio ratio={1920 / 1080}>
+            <Image src={project.image} height={isMobile ? 170 : 230} />
+          </AspectRatio>
+        </Card.Section>
+
         <Text fw={700} mt="md">
           {project.title}
         </Text>
