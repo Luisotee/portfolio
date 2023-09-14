@@ -8,6 +8,7 @@ import {
   Container,
   AspectRatio,
 } from "@mantine/core";
+import { useState } from "react";
 
 const projects = [
   {
@@ -42,7 +43,7 @@ const useStyles = createStyles((theme) => ({
     transition: "transform 150ms ease, box-shadow 150ms ease",
 
     "&:hover": {
-      transform: "scale(1.01)",
+      transform: "scale(1.05)",
       boxShadow: theme.shadows.md,
     },
   },
@@ -50,27 +51,39 @@ const useStyles = createStyles((theme) => ({
 
 export function ProjectsCard() {
   const { classes } = useStyles();
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   const cards = projects.map((project) => (
-    <Card
-      key={project.title}
-      p="md"
-      radius="md"
-      component="a"
-      href={project.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes.card}
-      data-aos="flip-left"
-    >
-      <AspectRatio ratio={1920 / 1080}>
-        <Image src={project.image} />
-      </AspectRatio>
-      <Text fw={700} mt="md">
-        {project.title}
-      </Text>
-      <Text mt={5}> {project.desc}</Text>
-    </Card>
+    <div key={project.title} data-aos="flip-left" style={{ width: "100%" }}>
+      <Card
+        p="md"
+        radius="md"
+        component="a"
+        href={project.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.card}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        h="100%"
+      >
+        <AspectRatio ratio={1920 / 1080}>
+          <Image src={project.image} />
+        </AspectRatio>
+        <Text fw={700} mt="md">
+          {project.title}
+        </Text>
+        <Text mt={5}> {project.desc}</Text>
+      </Card>
+    </div>
   ));
 
   return (
