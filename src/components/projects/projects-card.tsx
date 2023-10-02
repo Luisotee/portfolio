@@ -22,7 +22,7 @@ const projects = [
     title: "Android Tax Calculator",
     image: "adaptive-icon.png",
     desc: "Brazilian tax calculation APP",
-    href: "nextjs-icon.png",
+    href: "https://github.com/Luisotee/CalculadoraIRPFAndroid",
   },
   {
     title: "Help Facul",
