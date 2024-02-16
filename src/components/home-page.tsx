@@ -93,7 +93,7 @@ export function HomePage() {
           //data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-once="true"
-          href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EcAQPTOQdypGgldTO8XSVrYBLIrcbAU2PA-bbgiKXWVDYg?e=OlRFod"
+          href="https://seducsp-my.sharepoint.com/:b:/g/personal/regilenemartins_professor_educacao_sp_gov_br/EaVneGyuAmpDvoFUByFr2_YBJrAF-Xl2RvdExt5T2MlPPQ?e=AEYvwA"
         >
           RESUME
         </Button>
