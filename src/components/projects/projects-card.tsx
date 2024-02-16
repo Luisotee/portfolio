@@ -13,15 +13,15 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Sydney WhatsApp Assistant",
+    title: "WhatsApp Chatbot Assistant",
     image: "Bing_Chat_2023.png",
-    desc: "A WhatsApp chatbot that leverages Bing AI's conversational capabilities.",
-    href: "https://github.com/veigamann/sydney-whatsapp-chatbot",
+    desc: "A WhatsApp chatbot that utilizes Bing AI and all OpenRouter models to enhance its conversational capabilities.",
+    href: "https://github.com/WAppAI/assistant",
   },
   {
     title: "Android Tax Calculator",
     image: "adaptive-icon.png",
-    desc: "Brazilian tax calculation APP",
+    desc: "Streamlined Android tax calculator app for Brazilian taxpayers, simplifying income tax calculations with precision.",
     href: "https://github.com/Luisotee/CalculadoraIRPFAndroid",
   },
   {
