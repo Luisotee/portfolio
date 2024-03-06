@@ -7,7 +7,7 @@ export function AboutMe() {
       <Stack align="center">
         <Title order={1}> About Me </Title>
         <Text>
-          Hello, I'm Luis Otavio, a 21-year-old Brazilian hailing from the
+          Hello, I'm Luis Otavio, a 22-year-old Brazilian hailing from the
           charming city of Sorocaba. I'm a dedicated computer engineering
           student and a passionate software developer on a perpetual quest for
           knowledge and innovation. My journey in the world of technology has
