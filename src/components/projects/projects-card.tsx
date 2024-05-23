@@ -14,9 +14,21 @@ import { useState } from "react";
 const projects = [
   {
     title: "WhatsApp Chatbot Assistant",
-    image: "Bing_Chat_2023.png",
-    desc: "A WhatsApp chatbot that utilizes Bing AI and all OpenRouter models to enhance its conversational capabilities.",
+    image: "WhatsApp.svg",
+    desc: "A WhatsApp chatbot that utilizes Bing AI and LangChain to enhance its conversational capabilities.",
     href: "https://github.com/WAppAI/assistant",
+  },
+  {
+    title: "LangChain Google Routes Tool",
+    image: "langchain-seeklogo.svg",
+    desc: "A tool that helps getting information from Google Routes API to a LLM model.",
+    href: "https://github.com/langchain-ai/langchainjs/pull/5329",
+  },
+  {
+    title: "Voting Bot",
+    image: "puppeteer-seeklogo.svg",
+    desc: "A bot that automates the voting process for a game using Puppeteer and GPT-4o for CAPTCHA solving.",
+    href: "https://www.linkedin.com/posts/luisotee_excited-to-share-my-latest-project-an-automated-activity-7199546907998777344-YggO?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "Android Tax Calculator",
@@ -25,16 +37,16 @@ const projects = [
     href: "https://github.com/Luisotee/CalculadoraIRPFAndroid",
   },
   {
+    title: "Ip Address Tracker",
+    image: "nextjs-icon.svg",
+    desc: "IP localization website",
+    href: "https://github.com/Luisotee/ip-address-tracker",
+  },
+  {
     title: "Help Facul",
     image: "book.png",
     desc: "A university project showcasing a website where students can promote themselves as private teachers.",
     href: "https://github.com/Luisotee/HelpFacul",
-  },
-  {
-    title: "Ip Address Tracker",
-    image: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-    desc: "IP localization website",
-    href: "https://github.com/Luisotee/ip-address-tracker",
   },
 ];
 

@@ -8,13 +8,12 @@ export function AboutMe() {
         <Title order={1}> About Me </Title>
         <Text>
           Hello, I'm Luis Otavio, a 22-year-old Brazilian hailing from the
-          charming city of Sorocaba. I'm a dedicated computer engineering
-          student and a passionate software developer on a perpetual quest for
-          knowledge and innovation. My journey in the world of technology has
-          taken me through the realms of JavaScript, TypeScript, React, React
-          Native, and Node.js, shaping me into a versatile developer with a
-          penchant for creating meaningful projects, all of which I proudly
-          showcase on my GitHub profile.
+          charming city of Sorocaba. I'm a dedicated student and a passionate
+          software developer on a perpetual quest for knowledge and innovation.
+          My journey in the world of technology has taken me through the realms
+          of JavaScript, TypeScript, React, React Native, and Node.js, shaping
+          me into a versatile developer with a penchant for creating meaningful
+          projects, all of which I proudly showcase on my GitHub profile.
         </Text>
         <Text>
           I'm fueled by my passion for technology and a relentless drive to
